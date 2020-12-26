@@ -7,7 +7,8 @@ This model is then compared to an Azure AutoML run.
 
 ## Summary
 
-This dataset contains data about personal information for clients of a bank. We seek to predict how likely the client will subscribe for a deposit.
+This dataset contains data about personal information for clients of a bank. We seek to predict how likely the client will subscribe for a deposit, and the problem is a classifiction problem.
+The model with best performance was VotingEnsemble with accuracy of 0.9168.
 
 
 ## Scikit-learn Pipeline
@@ -34,15 +35,15 @@ In this problem the seacrh space consisted of the hyperparameters C and max_iter
 ## AutoML
 
 or the automl model, **AutoMLConfig** class was used, and various parameters were passed to it (**automl_config**): experiment_timeout_minutes=30, task= 'classification', primary_metric= 'accuracy', training_data= x, label_column_name= 'y', and n_cross_validations= 4.
-The great thing about AutoML is that it generates various models and the models that were generated in this experience are: 
-And the model with the best accuracy was LightGBM 0.9160.
+The great thing about AutoML is that it generates various models, in this experiment 31 models were generated and the models are: LightGBM, XGBoostClassifier, RandomForest, GradientBoosting, LogisticRegression, ExtremeRandomTrees, StackEnsemble and VotingEnsemble.
+And the model with the best accuracy was VotingEnsemble with score of 0.9168.
 
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 
 In the first model which was **Logistic Regression** classifier, I had only one model unlike **AutoML** model it generted many models.
-**AutoML** although it generates many models not just one, it was faster than the **HyperDrive**.
-
+**AutoML** considering it had generated 31 models, I would say it was faster than the **HyperDrive**.
+The best accuracy in *HyperDrive* was 0.9130857004127215 and in *AutoML* was 0.9168.
 
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
