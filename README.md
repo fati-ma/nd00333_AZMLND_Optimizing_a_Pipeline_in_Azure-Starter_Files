@@ -35,14 +35,14 @@ In this problem the seacrh space consisted of the hyperparameters C and max_iter
 
 or the automl model, **AutoMLConfig** class was used, and various parameters were passed to it (**automl_config**): experiment_timeout_minutes=30, task= 'classification', primary_metric= 'accuracy', training_data= x, label_column_name= 'y', and n_cross_validations= 4.
 The great thing about AutoML is that it generates various models and the models that were generated in this experience are: 
-And the model with the best accuracy was  and it's hyperparameters are: 
+And the model with the best accuracy was LightGBM 0.9160.
 
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 
 In the first model which was **Logistic Regression** classifier, I had only one model unlike **AutoML** model it generted many models.
 **AutoML** although it generates many models not just one, it was faster than the **HyperDrive**.
-And for the accuracy
+
 
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
