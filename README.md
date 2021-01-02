@@ -48,7 +48,7 @@ And the model with the best accuracy was **VotingEnsemble** with score of 0.9167
 
 Best metrics for best run:
 
-![](https://github.com/fati-ma/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/automl-completed5.PNG?raw=true)
+![automl-5](https://github.com/fati-ma/nd00333_AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/blob/master/automl-5.PNG?raw=true)
 
 Best model output:
 
