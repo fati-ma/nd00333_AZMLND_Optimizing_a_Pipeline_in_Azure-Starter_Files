@@ -44,7 +44,7 @@ The hypermarameters:
 
 The great thing about AutoML is that it generates various models, in this experiment 42 models were generated and the models are: LightGBM, XGBoostClassifier, RandomForest, GradientBoosting, StackEnsemble and VotingEnsemble.
 
-And the model with the best accuracy was **VotingEnsemble** with score of 0.9167. **VotingEnsemble** predicts based on the weighted average of predicted class probabilities.
+And the model with the best accuracy was **VotingEnsemble** with score of 0.9167. **VotingEnsemble** It is used to improve model performance, to achiev a better performance than when using a single model. In classification problems like this one it predicts based on the weighted average of predicted class probabilities.
 
 Best metrics for best run:
 
