@@ -44,7 +44,7 @@ The hypermarameters:
 
 The great thing about AutoML is that it generates various models, in this experiment 42 models were generated and the models are: LightGBM, XGBoostClassifier, RandomForest, GradientBoosting, StackEnsemble and VotingEnsemble.
 
-And the model with the best accuracy was **VotingEnsemble** with score of 0.9167. **VotingEnsemble** It is used to improve model performance, to achiev a better performance than when using a single model. In classification problems like this one it predicts based on the weighted average of predicted class probabilities.
+And the model with the best accuracy was **VotingEnsemble** with score of 0.9167. **VotingEnsemble** is used to improve model performance, to achieve a better performance than when using a single model. In classification problems like this one it predicts based on the weighted average of predicted class probabilities.
 
 Best metrics for best run:
 
@@ -60,7 +60,7 @@ Best model output:
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 
 In the first model which was **Logistic Regression** classifier, it had only one model unlike in **AutoML** it generted many models.
-**AutoML** considering it had generated 31 models, I would say it was faster than the **HyperDrive**.
+**AutoML** considering it had generated 42 models, I would say it was faster than the **HyperDrive**.
 The best accuracy in *HyperDrive* was 0.9158 and in *AutoML* was 0.9167.
 
 ## Future work
